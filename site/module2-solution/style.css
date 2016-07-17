@@ -16,9 +16,10 @@ p {
 	border: 1px solid black;
 	padding: 15px;
 	width: 90%;
-  height: 250px;
+  height: 180px;
   margin: 15px;
   color: black;
+  overflow-y: auto;
 }
 
 #p1 {position: relative;
