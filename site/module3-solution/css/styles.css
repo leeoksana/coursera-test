@@ -7,7 +7,7 @@ body {
 #header-nav {
 	background-color: #FFFB00;
 	border-radius: 0;
-	border: 0;
+	border: 1px solid black;
 }
 .navbar-brand {
 	padding-left: 30px;
