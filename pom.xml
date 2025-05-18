@@ -1,1 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- Model version -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project coordinates -->
+    <groupId>com.example</groupId>
+    <artifactId>my-app</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging> <!-- Optional, default is jar -->
+
+    <!-- Optional: Project metadata -->
+    <name>My App</name>
+    <description>A simple Maven project</description>
+    <url>http://example.com/my-app</url>
+
+    <!-- Optional: SCM info, licenses, developers, etc. -->
+
+    <!-- Properties for configuration -->
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- Other properties like encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Dependencies -->
+    <dependencies>
+        <!-- Example dependency: JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Add other dependencies here -->
+    </dependencies>
+
+    <!-- Build configuration -->
+    <build>
+        <plugins>
+            <!-- Compiler plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Other plugins (e.g., surefire for tests) -->
+        </plugins>
+    </build>
+
+    <!-- Optional: Repositories if not using Maven Central -->
+    <!--
+    <repositories>
+        <repository>
+            <id>custom-repo</id>
+            <url>https://repo.example.com/maven2</url>
+        </repository>
+    </repositories>
+    -->
+
+</project>
 
